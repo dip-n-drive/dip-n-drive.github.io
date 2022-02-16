@@ -1,0 +1,123 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black !important;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('videos/REVISION\ 11_Trim.mp4') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
+
+/* CUSTOMIZED */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header .container {
+    opacity: 0.0;
+    animation: 1s ease-out 1s 1 fade-in;
+    animation-fill-mode: forwards;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-one {
+    background: url('images/pexels-adrien-olichon-2387793.jpg');
+    background-size: cover;
+}
+
+.section-two {
+    background: url('images/pexels-sora-shimazaki-5668473.jpg');
+    background-size: cover;
+}
+
+.section-three {
+    background: url('images/pexels-miguel-á-padriñán-3785935.jpg');
+    background-size: cover;
+}
+
+.section-four {
+    background: url('images/pexels-roberto-shumski-5555192.jpg');
+    background-size: cover;
+}
+
+.icon-container a {
+    color: white;
+    text-align: center;
+}
