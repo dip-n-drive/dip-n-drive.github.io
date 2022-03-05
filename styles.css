@@ -101,6 +101,11 @@ header .container {
 }
 
 .section-five {
+    background: url('images/mexico-beach-landscape-photo.jpeg');
+    background-size: cover;
+}
+
+.section-six {
     background: url('images/pexels-roberto-shumski-5555192.jpg');
     background-size: cover;
 }
