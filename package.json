@@ -1,0 +1,22 @@
+{
+  "name": "dip-n-drive.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "cp -r src/* build/ && cp -r images build/ && cp -r pdfjs-2.13.216-dist build/ && cp -r pdfs build/ && cp -r videos build/ && cp CNAME build/ && npx tailwindcss -o build/styles.css --minify",
+    "clean": "rm -rf build/*",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
