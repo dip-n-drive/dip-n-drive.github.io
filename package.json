@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "cp -r src/* build/ && cp -r images build/ && cp -r pdfjs-2.13.216-dist build/ && cp -r pdfs build/ && cp -r videos build/ && cp CNAME build/ && npx tailwindcss -o build/styles.css --minify",
+    "build": "cp -r src/* build/ && cp -r images build/ && cp -r pdfjs-2.13.216-dist build/ && cp -r pdfs build/ && cp -r videos build/ && cp CNAME build/ && npx tailwindcss -o build/styles.css --minify && node replace.js",
     "clean": "rm -rf build/*",
     "deploy": "gh-pages -d build"
   },
@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "replace-in-file": "^7.0.2",
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
