@@ -28,7 +28,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
 </head>
 <body>
     <header class="relative flex items-center justify-center h-screen overflow-hidden">
@@ -46,6 +45,23 @@
             Your browser does not support the video tag.
         </video>
     </header>
+
+    <section class="bg-white">
+        <div class="custom-center-content-container">
+            <div class="mx-10 sm:mx-20">
+                <h1 data-aos="zoom-in" class="text-4xl md:text-6xl text-black text-center"><span class="text-green-500">New</span> Prototypes</h1>
+                <!-- Gallery -->
+                <div class="grid grid-cols-2">
+                    <div data-aos="fade-right" class="ml-auto">
+                        <img class="h-20 md:h-40 m-6 image-item" src="/images/container-front.png" />
+                    </div>
+                    <div data-aos="fade-left" class="mr-auto">
+                        <img class="h-20 md:h-40 m-6 image-item" src="/images/container-side.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="bg-[url('/images/pexels-sora-shimazaki-5668473.jpg')] w-full h-full bg-no-repeat bg-cover bg-left bg-fixed">
         <div class="custom-center-content-container">
@@ -80,7 +96,7 @@
         <div class="custom-center-content-container">
             <div class="mx-10 sm:mx-20">
                 <div class="h-10 md:h-20"></div>
-                <h1 class="text-4xl md:text-6xl text-white text-center my-4">3D Model</h1>
+                <h1 class="text-4xl md:text-6xl text-white text-center my-4">3D Animation</h1>
                 <div class="h-10"></div>
                 <iframe class="w-full aspect-video" title="DipNDrive-Animation-V4" frameborder="0" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered=""
                             web-share="" src="https://sketchfab.com/models/24b1b39d1ab94ef6b7b2affac3906f63/embed"> </iframe>
@@ -191,5 +207,6 @@
     <script>
         AOS.init();
     </script>
+    
 </body>
 </html>
